@@ -1,0 +1,293 @@
+{
+  "description": "Test pairs for semantic cache evaluation. Each pair has an original cached query and variations that should/should not match.",
+  "general_positive_pairs": [
+    {
+      "cached": "How do I reset my password?",
+      "query": "I need to change my password",
+      "notes": "Common support question paraphrase"
+    },
+    {
+      "cached": "What are your business hours?",
+      "query": "When are you open?",
+      "notes": "Simple question reformulation"
+    },
+    {
+      "cached": "How much does shipping cost?",
+      "query": "What are the delivery fees?",
+      "notes": "Synonym substitution"
+    },
+    {
+      "cached": "Can I get a refund?",
+      "query": "I want my money back",
+      "notes": "Formal to informal"
+    },
+    {
+      "cached": "How do I contact customer support?",
+      "query": "I need to talk to someone for help",
+      "notes": "Intent preserved, different phrasing"
+    },
+    {
+      "cached": "What payment methods do you accept?",
+      "query": "Can I pay with credit card?",
+      "notes": "General to specific (same intent)"
+    },
+    {
+      "cached": "How long does delivery take?",
+      "query": "When will my order arrive?",
+      "notes": "Process vs outcome framing"
+    },
+    {
+      "cached": "Is there a discount for students?",
+      "query": "Do you offer student pricing?",
+      "notes": "Synonym substitution"
+    },
+    {
+      "cached": "What is your return policy?",
+      "query": "How do returns work?",
+      "notes": "Noun to verb reformulation"
+    },
+    {
+      "cached": "Can I cancel my subscription?",
+      "query": "How do I stop my membership?",
+      "notes": "Synonym substitution"
+    },
+    {
+      "cached": "Where is my order?",
+      "query": "I want to track my package",
+      "notes": "Question to statement"
+    },
+    {
+      "cached": "Do you ship internationally?",
+      "query": "Can you deliver outside the US?",
+      "notes": "General to specific geography"
+    },
+    {
+      "cached": "How do I update my account info?",
+      "query": "I need to change my profile details",
+      "notes": "Technical to casual"
+    },
+    {
+      "cached": "What size should I order?",
+      "query": "Help me find my size",
+      "notes": "Question to request"
+    },
+    {
+      "cached": "Is this product in stock?",
+      "query": "Do you have this item available?",
+      "notes": "Jargon to plain language"
+    }
+  ],
+  "general_negative_pairs": [
+    {
+      "cached": "How do I reset my password?",
+      "query": "How do I delete my account?",
+      "notes": "Both account actions but different intent"
+    },
+    {
+      "cached": "What are your business hours?",
+      "query": "Where is your store located?",
+      "notes": "Both store info but different questions"
+    },
+    {
+      "cached": "How much does shipping cost?",
+      "query": "How long does shipping take?",
+      "notes": "Both shipping but cost vs time"
+    },
+    {
+      "cached": "Can I get a refund?",
+      "query": "Can I exchange this item?",
+      "notes": "Both returns but different outcomes"
+    },
+    {
+      "cached": "How do I contact customer support?",
+      "query": "What is your company address?",
+      "notes": "Both contact-related but different intent"
+    },
+    {
+      "cached": "What payment methods do you accept?",
+      "query": "Do you offer payment plans?",
+      "notes": "Both payment but methods vs financing"
+    },
+    {
+      "cached": "Is there a discount for students?",
+      "query": "Is there a discount for bulk orders?",
+      "notes": "Both discounts but different eligibility"
+    },
+    {
+      "cached": "Can I cancel my subscription?",
+      "query": "Can I pause my subscription?",
+      "notes": "Both subscription changes but different actions"
+    },
+    {
+      "cached": "Where is my order?",
+      "query": "Where do you ship from?",
+      "notes": "Both location questions but different subject"
+    },
+    {
+      "cached": "Is this product in stock?",
+      "query": "Is this product on sale?",
+      "notes": "Both product questions but availability vs price"
+    }
+  ],
+  "positive_pairs": [
+    {
+      "cached": "waterfront property with private dock",
+      "query": "lakefront home with boat dock",
+      "notes": "Different water body terms, same concept"
+    },
+    {
+      "cached": "cozy cottage near the beach",
+      "query": "small beach house with charm",
+      "notes": "Synonym substitution"
+    },
+    {
+      "cached": "modern downtown condo with city views",
+      "query": "contemporary urban apartment overlooking the city",
+      "notes": "Full paraphrase"
+    },
+    {
+      "cached": "family home with large backyard",
+      "query": "house with big yard for kids",
+      "notes": "Intent preserved, different phrasing"
+    },
+    {
+      "cached": "luxury home with pool",
+      "query": "upscale property with swimming pool",
+      "notes": "Luxury synonym"
+    },
+    {
+      "cached": "quiet neighborhood for retirees",
+      "query": "peaceful area good for retirement",
+      "notes": "Demographic intent"
+    },
+    {
+      "cached": "home with home office space",
+      "query": "house with dedicated workspace",
+      "notes": "Remote work intent"
+    },
+    {
+      "cached": "pet-friendly apartment",
+      "query": "condo that allows dogs",
+      "notes": "Specific pet type"
+    },
+    {
+      "cached": "fixer-upper with potential",
+      "query": "needs work but good bones",
+      "notes": "Colloquial equivalent"
+    },
+    {
+      "cached": "move-in ready home",
+      "query": "turnkey property no repairs needed",
+      "notes": "Real estate jargon equivalence"
+    },
+    {
+      "cached": "open floor plan with natural light",
+      "query": "bright and airy layout",
+      "notes": "Describing same feature differently"
+    },
+    {
+      "cached": "close to good schools",
+      "query": "in a top school district",
+      "notes": "Education priority"
+    },
+    {
+      "cached": "investment property with rental income",
+      "query": "income-generating real estate",
+      "notes": "Investor intent"
+    },
+    {
+      "cached": "historic home with character",
+      "query": "older house with original features",
+      "notes": "Age as positive"
+    },
+    {
+      "cached": "energy efficient home with solar",
+      "query": "eco-friendly house with solar panels",
+      "notes": "Green features"
+    }
+  ],
+  "negative_pairs": [
+    {
+      "cached": "waterfront property with private dock",
+      "query": "downtown condo near restaurants",
+      "notes": "Completely different location type"
+    },
+    {
+      "cached": "cozy cottage near the beach",
+      "query": "mountain cabin with ski access",
+      "notes": "Beach vs mountain - opposite"
+    },
+    {
+      "cached": "luxury home with pool",
+      "query": "affordable starter home",
+      "notes": "Opposite price segment"
+    },
+    {
+      "cached": "quiet neighborhood for retirees",
+      "query": "vibrant area with nightlife",
+      "notes": "Opposite lifestyle"
+    },
+    {
+      "cached": "family home with large backyard",
+      "query": "studio apartment downtown",
+      "notes": "Opposite property type and size"
+    },
+    {
+      "cached": "fixer-upper with potential",
+      "query": "brand new construction",
+      "notes": "Opposite condition"
+    },
+    {
+      "cached": "pet-friendly apartment",
+      "query": "no pets allowed policy",
+      "notes": "Direct contradiction"
+    },
+    {
+      "cached": "close to good schools",
+      "query": "adult community 55+",
+      "notes": "Different demographic"
+    },
+    {
+      "cached": "historic home with character",
+      "query": "modern minimalist new build",
+      "notes": "Opposite style preference"
+    },
+    {
+      "cached": "investment property with rental income",
+      "query": "forever home to raise family",
+      "notes": "Different buyer intent"
+    }
+  ],
+  "edge_cases": [
+    {
+      "cached": "3 bedroom house",
+      "query": "3 BR home",
+      "should_match": true,
+      "notes": "Abbreviation"
+    },
+    {
+      "cached": "home under $500k",
+      "query": "house under $500,000",
+      "should_match": true,
+      "notes": "Number formatting"
+    },
+    {
+      "cached": "pool home",
+      "query": "home with pool and spa",
+      "should_match": false,
+      "notes": "Subset - spa adds requirement"
+    },
+    {
+      "cached": "waterfront",
+      "query": "water view",
+      "should_match": false,
+      "notes": "Waterfront vs view - different access level"
+    },
+    {
+      "cached": "gated community",
+      "query": "secure neighborhood",
+      "should_match": true,
+      "notes": "Security intent same, implementation detail differs"
+    }
+  ]
+}
